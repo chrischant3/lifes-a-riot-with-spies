@@ -1,0 +1,30 @@
+{
+  "name": "lifes-a-riot-with-stubs",
+  "version": "1.0.0",
+  "description": "Repo to get workshop attendees started with a simple stub",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrischant3/lifes-a-riot-with-stubs.git"
+  },
+  "keywords": [
+    "stub",
+    "testbash",
+    "testing",
+    "workshop"
+  ],
+  "author": "Ash Winter & Chris Chant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrischant3/lifes-a-riot-with-stubs/issues"
+  },
+  "homepage": "https://github.com/chrischant3/lifes-a-riot-with-stubs#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "generate-safe-id": "^1.0.2",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.15.1"
+  }
+}

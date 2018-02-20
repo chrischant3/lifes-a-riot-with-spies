@@ -1,0 +1,13 @@
+{
+    "lifes-a-riot-": [
+        {
+            "with" : "stubs"
+        },
+        {
+            "with" : "mocks"
+        },
+        {
+            "with" : "spies"
+        }
+    ]
+}
