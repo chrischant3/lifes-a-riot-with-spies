@@ -18,3 +18,9 @@ ADD ./package-lock.json /app
 #Install node modules
 RUN cd /app && \
     npm install
+
+# Expose ports
+EXPOSE 3000
+
+#Run on build
+CMD [ "npm", "start" ]

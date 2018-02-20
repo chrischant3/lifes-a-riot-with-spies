@@ -81,4 +81,4 @@ PRs accepted.
 
 ## License
 
-MIT © Leeds Testing Atelier
+MIT © Ash Winter and Chris Chant
