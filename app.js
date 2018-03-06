@@ -1,6 +1,25 @@
 var express = require('express');
 var app = express();
+var morgan = require('morgan');
+var path = require('path');
+var fs = require('fs');
+var rfs = require('rotating-file-stream');
+var accesslog = require('access-log');
+
 var index = require('./routes/index');
+
+//Check for existence of log dir or make it
+var logDirectory = path.join(__dirname, 'logs');
+fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory)
+
+//Create a rotating write stream
+var accessLogStream = rfs('access.log', {
+	interval: '1h', 
+	path: logDirectory
+});
+
+//Instruct the app to use logger to file
+app.use(morgan('combined', {stream:accessLogStream}));
 
 //Routes to use
 app.use('/', index);

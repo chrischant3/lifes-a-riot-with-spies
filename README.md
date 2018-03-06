@@ -1,38 +1,16 @@
-# Lifes a Riot with Stubs
+# Lifes a Riot with Spies
 
-> What you need to build a simple stub using Node and Express...
+> Adding a logger with morgan, experiment with the different formats...
 
-> Add a JSON file in {projectDir}/data
+> If you are brave, add a rotating file system using, well rotating-file-system
 
-> Add a new route in {projectDir}/routes/index.js
+> If you are really, really brave use Winston to set log levels!
 
-```
-//Required variables
-var express = require('express');
-var router = express.Router();
+_TODO_
 
-//Data to respond with
-var jsonResponse = require('../data/stub.json')
-
-//Logic to route
-router.get('/', function(req, res, next) {
-    res.json(jsonResponse)
-});
-
-module.exports = router;
-
-```
-
-> Add to app.js as main controller
-
-```
-//Require in freshly added route
-var index = require('./routes/index');
-
-//Routes to use
-app.use('/', index);
-```
-
+* Attendees can add metadata about their spy, namely a counter to display state
+* Attendees know who has called their spy by remote IP
+* Attendees can control how quickly their spy will respond
 
 
 ## Table of Contents
@@ -70,7 +48,7 @@ docker build --rm -f Dockerfile .
 To run:
 
 ```
-docker run --rm -d -p 5000:3000 lifes-a-riot-with-stubs
+docker run --rm -d -p 5000:3000 lifes-a-riot-with-spies
 ```
 *Where 5000 is the host port and 3000 is the exposed port in the container
 

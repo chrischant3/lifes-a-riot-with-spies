@@ -1,13 +1,13 @@
 {
-  "name": "lifes-a-riot-with-stubs",
+  "name": "lifes-a-riot-with-spies",
   "version": "1.0.0",
-  "description": "Repo to get workshop attendees started with a simple stub",
+  "description": "Repo to get workshop attendees started with a simple spies",
   "scripts": {
     "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrischant3/lifes-a-riot-with-stubs.git"
+    "url": "git+https://github.com/chrischant3/lifes-a-riot-with-spies.git"
   },
   "keywords": [
     "stub",
@@ -18,13 +18,16 @@
   "author": "Ash Winter & Chris Chant",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chrischant3/lifes-a-riot-with-stubs/issues"
+    "url": "https://github.com/chrischant3/lifes-a-riot-with-spies/issues"
   },
-  "homepage": "https://github.com/chrischant3/lifes-a-riot-with-stubs#readme",
+  "homepage": "https://github.com/chrischant3/lifes-a-riot-with-spies#readme",
   "dependencies": {
     "express": "^4.16.2",
     "generate-safe-id": "^1.0.2",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "reload": "^2.2.2",
+    "rotating-file-stream": "^1.3.4",
+    "winston": "^2.4.0"
   },
   "devDependencies": {
     "nodemon": "^1.15.1"
