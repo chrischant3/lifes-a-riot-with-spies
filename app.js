@@ -4,9 +4,12 @@ var morgan = require('morgan');
 var path = require('path');
 var fs = require('fs');
 var rfs = require('rotating-file-stream');
-var accesslog = require('access-log');
+var reload = require('reload');
 
 var index = require('./routes/index');
+var spies = require('./routes/spies');
+var faker = require('./routes/faker');
+var config = require('./routes/config');
 
 //Check for existence of log dir or make it
 var logDirectory = path.join(__dirname, 'logs');
@@ -23,6 +26,9 @@ app.use(morgan('combined', {stream:accessLogStream}));
 
 //Routes to use
 app.use('/', index);
+app.use('/spies', spies);
+app.use('/faker', faker);
+app.use('/config', config);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

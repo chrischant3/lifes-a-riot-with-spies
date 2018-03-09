@@ -2,10 +2,10 @@
 var express = require('express');
 var router = express.Router();
 var sleep = require('sleep');
-var responseWait = require('../config/responsetimes').routes.index;
+var responseWait = require('../config/responsetimes').routes.spies;
 
 //Data to respond with
-var jsonResponse = require('../data/index.json')
+var jsonResponse = require('../data/spies.json')
 
 //Logic to route
 router.get('/', function(req, res, next) {

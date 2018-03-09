@@ -1,15 +1,33 @@
 # Lifes a Riot with Spies
 
+_Logging_
+
 > Adding a logger with morgan, experiment with the different formats...
+
+> Try and create a log format where you can track who is calling your spy from where
 
 > If you are brave, add a rotating file system using, well rotating-file-system
 
 > If you are really, really brave use Winston to set log levels!
 
+_Controlling Response Time_
+
+> Create a new route that responds using static json with a status code of 200
+
+> Create a new route that responds using json with faker to generate dynamic data
+
+> Add a config file with key value pairs of routes and response times
+
+> Add a config route which has the POST method available, with the ability to change response times programatically.
+
+> For the brave use, reload to automatically restart the app after posting new response times
+
+> For the really brave, use pug to create an interface for managing that config!
+
 _TODO_
 
 * Attendees can add metadata about their spy, namely a counter to display state
-* Attendees know who has called their spy by remote IP
+
 * Attendees can control how quickly their spy will respond
 
 
