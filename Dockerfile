@@ -1,4 +1,4 @@
-# Pull base image.
+# Pull base image
 FROM node:alpine
 
 # Set Work Dir
@@ -6,7 +6,10 @@ WORKDIR /app
 
 # Copy files to install
 ADD ./bin/ /app/bin/
+ADD ./config/ /app/config/
 ADD ./data/ /app/data/
+ADD ./db/ /app/db/
+ADD ./models/ /app/models/
 ADD ./routes/ /app/routes/
 ADD ./app.js /app
 ADD ./package.json /app

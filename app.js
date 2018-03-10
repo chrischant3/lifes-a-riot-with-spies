@@ -4,12 +4,12 @@ var morgan = require('morgan');
 var path = require('path');
 var fs = require('fs');
 var rfs = require('rotating-file-stream');
-var reload = require('reload');
 
 var index = require('./routes/index');
 var spies = require('./routes/spies');
 var faker = require('./routes/faker');
 var config = require('./routes/config');
+var counter = require('./routes/counter');
 
 //Check for existence of log dir or make it
 var logDirectory = path.join(__dirname, 'logs');
@@ -29,6 +29,7 @@ app.use('/', index);
 app.use('/spies', spies);
 app.use('/faker', faker);
 app.use('/config', config);
+app.use('/counter', counter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

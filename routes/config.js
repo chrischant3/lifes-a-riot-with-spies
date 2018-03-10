@@ -12,10 +12,11 @@ router.use(bodyParser.urlencoded({ extended: false }));
 router.post('/', function(req, res, next) {
     fs.writeFile(responseConfigs, JSON.stringify(req.body), function (error) {
         if (error) {
-            throw error;
+            res.send(error);
+            return;
         }
+        res.status(201).end();
     });
-    res.status(200).end();
 });
 
 module.exports = router;

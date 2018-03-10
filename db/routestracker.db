@@ -1,0 +1,4 @@
+{"_id":"1213","route":"spies","requests":122,"createdAt":{"$$date":1520706028462},"updatedAt":{"$$date":1520706028462}}
+{"_id":"2213","route":"index","requests":124,"createdAt":{"$$date":1520706050153},"updatedAt":{"$$date":1520722274073}}
+{"_id":"4243","route":"index","requests":124,"createdAt":{"$$date":1520711638697},"updatedAt":{"$$date":1520722274073}}
+{"_id":"4253","route":"faker","requests":126,"createdAt":{"$$date":1520712985570},"updatedAt":{"$$date":1520721902830}}
